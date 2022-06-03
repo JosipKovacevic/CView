@@ -8,7 +8,7 @@ const FormDetails = () => {
   const { id } = useParams();
   const [cards, setCards] = useState(null);
   const [card, setCard] = useState(null);
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const toggle = () => setOpen(!open);
 
   useEffect(() => {

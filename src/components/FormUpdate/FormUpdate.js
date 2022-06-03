@@ -7,7 +7,7 @@ const FormUpdate = () => {
   const { id } = useParams();
   const [cards, setCards] = useState(null);
   const [card, setCard] = useState(null);
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const toggle = () => setOpen(!open);
 
   const [cardNumber1, setCardNumber1] = useState("");
@@ -71,7 +71,7 @@ const FormUpdate = () => {
       {card && (
         <div className="FormUpdate">
           <h1 className="FormUpdate-Title">Update</h1>
-          <form className="FormUpdate-Container">
+          <form onSubmit={handleSubmit} className="FormUpdate-Container">
             <div className="FormUpdate-Container-Small">
               <label className="FormUpdate-Label">Card number</label>
               <div>
@@ -173,9 +173,9 @@ const FormUpdate = () => {
                 required
               ></input>
             </div>
-            <Link onClick={handleSubmit} to="/" className="FormUpdate-Buttons">
+            <div className="FormUpdate-Buttons">
               <button className="FormUpdate-Button">Update</button>
-            </Link>
+            </div>
           </form>
         </div>
       )}

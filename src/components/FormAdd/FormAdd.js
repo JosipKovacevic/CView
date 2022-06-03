@@ -48,7 +48,7 @@ const FormAdd = () => {
     <>
       <div className="FormAdd">
         <h1 className="FormAdd-Title">Add card</h1>
-        <form className="FormAdd-Container">
+        <form onSubmit={handleSubmit} className="FormAdd-Container">
           <div className="FormAdd-Container-Small">
             <label className="FormAdd-Label">Card number</label>
             <div>
@@ -155,11 +155,11 @@ const FormAdd = () => {
             ></input>
           </div>
 
-          <Link onClick={handleSubmit} to="/" className="FormAdd-Buttons">
+          <div className="FormAdd-Buttons">
             <button className="FormAdd-Button" type="submit">
               Add
             </button>
-          </Link>
+          </div>
         </form>
       </div>
     </>
