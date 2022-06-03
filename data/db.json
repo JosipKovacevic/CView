@@ -1,0 +1,28 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "cardNumber1": "0123",
+      "cardNumber2": "4567",
+      "cardNumber3": "8910",
+      "cardNumber4": "1112",
+      "cardName": "Vince Carter",
+      "expiration": "08/22",
+      "cvv": "123",
+      "code": "1234",
+      "balance": "1234"
+    },
+    {
+      "cardNumber1": "2111",
+      "cardNumber2": "0198",
+      "cardNumber3": "7654",
+      "cardNumber4": "3210",
+      "cardName": "Carter Vince",
+      "expiration": "01/23",
+      "cvv": "321",
+      "code": "4321",
+      "balance": "4321",
+      "id": 2
+    }
+  ]
+}

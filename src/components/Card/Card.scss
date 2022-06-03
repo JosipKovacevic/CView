@@ -1,0 +1,296 @@
+.Container {
+  place-self: center;
+  display: grid;
+  width: 390px;
+  @media (min-width: 1280px) {
+    width: 630px;
+  }
+}
+
+.Wrapper {
+  display: grid;
+}
+
+.Card {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 10px;
+  margin-top: 38px;
+  font-family: "Inter";
+  width: 360px;
+  place-self: center;
+  @media (min-width: 1280px) {
+    width: 630px;
+  }
+
+  &-Background {
+    width: 360px;
+    height: 202px;
+    place-self: center;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background: rgb(2, 0, 36);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      73.4deg,
+      #5c3149 1.65%,
+      #bb377f 46.31%,
+      #ffb3dd 99.09%
+    );
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 85% 15%;
+    @media (min-width: 1280px) {
+      width: 630px;
+      height: 353px;
+    }
+  }
+  &-Grid {
+    height: fit-content;
+  }
+  &-ChipSvg {
+    margin-top: 31px;
+    margin-left: 13px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+    @media (min-width: 1280px) {
+      width: 79px;
+      height: 58px;
+      margin-top: 52px;
+      margin-left: 23px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &-Logo {
+    margin-top: 35px;
+    margin-right: 4px;
+
+    grid-row-start: 1;
+    grid-column-start: 5;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 18px;
+    justify-self: center;
+
+    color: #ffffff;
+
+    @media (min-width: 1280px) {
+      margin-top: 71px;
+      margin-right: 25px;
+      font-weight: 800;
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+  &-ExpirationDate {
+    margin-top: 8px;
+    margin-left: 9px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6px;
+    line-height: 7px;
+
+    color: #ffffff;
+
+    @media (min-width: 1280px) {
+      margin-top: 40px;
+      margin-left: 15px;
+      font-weight: 700;
+      font-size: 11px;
+      line-height: 13px;
+    }
+  }
+
+  &-Date {
+    margin-top: 8px;
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #ffffff;
+
+    @media (min-width: 1280px) {
+      margin: 10px 0 40px 35px;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &-Number {
+    margin-top: 23px;
+    margin-left: 13px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6px;
+    line-height: 7px;
+
+    color: #ffffff;
+    text-transform: uppercase;
+
+    @media (min-width: 1280px) {
+      margin-top: 40px;
+      margin-left: 15px;
+      font-weight: 700;
+      font-size: 11px;
+      line-height: 13px;
+    }
+  }
+
+  &-Numbres {
+    justify-self: center;
+    grid-row-start: 1;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+
+    text-transform: uppercase;
+    margin-bottom: 0;
+
+    @media (min-width: 1280px) {
+      margin-top: 15px;
+      margin-left: 25px;
+      font-weight: 800;
+      font-size: 28px;
+      line-height: 34px;
+    }
+
+    &-1 {
+      grid-row-start: 1;
+      justify-self: center;
+      margin-top: 9px;
+      margin-left: 13px;
+      color: #ffffff;
+      margin-bottom: 0;
+    }
+    &-2 {
+      grid-row-start: 1;
+      grid-column-start: 2;
+      margin-top: 138px;
+      color: #ffffff;
+      justify-self: center;
+      @media (min-width: 1280px) {
+        margin-top: 243px;
+      }
+    }
+    &-3 {
+      grid-row-start: 1;
+      grid-column-start: 3;
+      justify-self: center;
+      margin-top: 138px;
+      color: #ffffff;
+      @media (min-width: 1280px) {
+        margin-top: 243px;
+      }
+    }
+    &-4 {
+      grid-row-start: 1;
+      grid-column-start: 4;
+      justify-self: center;
+      margin-top: 138px;
+      color: #ffffff;
+      @media (min-width: 1280px) {
+        margin-top: 243px;
+      }
+    }
+  }
+  &-Name {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 13px;
+    margin-top: 0;
+    margin-bottom: 18px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #ffffff;
+    text-transform: uppercase;
+    align-self: center;
+    @media (min-width: 1280px) {
+      grid-column-end: 4;
+      margin-left: 25px;
+      margin-top: 0;
+      margin-bottom: 30px;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+
+  &-Link_Update {
+    place-self: center;
+    grid-row-start: 2;
+    grid-column-start: 2;
+  }
+
+  &-Link_Delete {
+    place-self: center;
+    grid-row-start: 2;
+    grid-column-start: 4;
+  }
+  &-Button_Update {
+    width: 52px;
+    height: 24px;
+
+    background-color: white;
+    border: 1px solid #000000;
+    color: #000000;
+
+    text-align: center;
+    place-self: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 21px;
+
+    @media (min-width: 1280px) {
+      width: 89px;
+      height: 41px;
+      font-weight: 800;
+      font-size: 17px;
+      line-height: 21px;
+      margin-top: 25px;
+    }
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      filter: drop-shadow(3px 3px 3px #a6a6a6);
+      cursor: pointer;
+    }
+  }
+
+  &-AddSvg {
+    place-self: center;
+    margin-top: 15px;
+
+    @media (min-width: 1280px) {
+      margin-top: 68px;
+    }
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      filter: drop-shadow(3px 3px 3px #a6a6a6);
+      cursor: pointer;
+    }
+
+    &_Img {
+      @media (min-width: 1280px) {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
