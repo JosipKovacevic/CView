@@ -46,7 +46,7 @@ const Card = () => {
               <Link
                 to="/"
                 className="Card-Link_Delete"
-                onClick={() => window.location.reload()}
+                onClick={() => window.location.reload().scrollTo(0, 0)}
               >
                 <button
                   className="Card-Button_Update"

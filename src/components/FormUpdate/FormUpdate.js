@@ -1,7 +1,7 @@
 import "./FormUpdate.scss";
 import HiddenSvg from "../../assets/hidden.svg";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const FormUpdate = () => {
   const { id } = useParams();
@@ -47,8 +47,6 @@ const FormUpdate = () => {
   }, [card, id]);
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-
     const card = {
       cardNumber1,
       cardNumber2,
@@ -73,7 +71,7 @@ const FormUpdate = () => {
       {card && (
         <div className="FormUpdate">
           <h1 className="FormUpdate-Title">Update</h1>
-          <form onSubmit={handleSubmit} className="FormUpdate-Container">
+          <form className="FormUpdate-Container">
             <div className="FormUpdate-Container-Small">
               <label className="FormUpdate-Label">Card number</label>
               <div>
@@ -175,9 +173,9 @@ const FormUpdate = () => {
                 required
               ></input>
             </div>
-            <div className="FormUpdate-Buttons">
+            <Link onClick={handleSubmit} to="/" className="FormUpdate-Buttons">
               <button className="FormUpdate-Button">Update</button>
-            </div>
+            </Link>
           </form>
         </div>
       )}

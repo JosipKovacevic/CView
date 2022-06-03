@@ -24,7 +24,7 @@ const FormAdd = () => {
 
   const code = randomCode;
 
-  const handleSubmit = (e) => {
+  const handleSubmit = () => {
     const card = {
       cardNumber1,
       cardNumber2,
@@ -48,7 +48,6 @@ const FormAdd = () => {
     <>
       <div className="FormAdd">
         <h1 className="FormAdd-Title">Add card</h1>
-
         <form className="FormAdd-Container">
           <div className="FormAdd-Container-Small">
             <label className="FormAdd-Label">Card number</label>
